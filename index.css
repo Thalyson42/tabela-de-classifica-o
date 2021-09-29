@@ -1,0 +1,127 @@
+* {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  heigth: 100vh;
+  font-family: "Roboto Mono", monospace;
+  min-height: 400px;
+  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png");
+  background-color: #111;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 5px;
+}
+
+.page-subtitle {
+  color: #ffffff;
+  margin-top: 5px;
+}
+
+.page-logo {
+  width: 200px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 1100px;
+  width: 90%;
+}
+
+table {
+  border: 2px solid white;
+  border-collapse: collapse;
+}
+
+#playerTableContent {
+  margin-bottom: 50px;
+}
+
+#playerTableContent h1 {
+  color: white;
+  margin-bottom: 50px;
+}
+
+th,
+tr,
+td {
+  border: solid 1px white;
+  color: white;
+}
+
+td span img {
+  height: 50px;
+  border-radius: 8px;
+}
+
+td input {
+  width: 50%;
+  border: 0;
+  background: none;
+  color: white;
+}
+
+#addPlayerContent {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 420px;
+  align-content: center;
+}
+
+#addPlayerContent label {
+  color: white;
+}
+
+#addPlayerContent input {
+  border: 0;
+  border-radius: 8px;
+  background-color: #f0f0f5;
+  margin-bottom: 10px;
+  padding: 10px 16px;
+}
+
+#addPlayerContent button {
+  border: 0;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+  style-weight: bold;
+  padding: 10px;
+}
+
+#tableBody tr.winning td.name {
+  background-color: green;
+}
+
+@media (max-width: 900px) {
+  .content {
+    align-items: center;
+  }
+
+  #playerTableContent {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    width: 400px;
+  }
+
+  #addPlayerContent {
+    align-items: center;
+  }
+}
